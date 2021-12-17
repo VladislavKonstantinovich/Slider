@@ -6,7 +6,7 @@ left.addEventListener('click', function MoveLeft() {
     offset += 550;
     slider.style.transition = '0.5s';
     if (offset > 0) {
-        slider.style.transition = '0s';
+        slider.style.transition = '0.3s';
         offset = -1100;
     }
     slider.style.left = offset + 'px';
@@ -16,7 +16,7 @@ right.addEventListener('click', function MoveRight() {
     offset += -550;
     slider.style.transition = '0.5s';
     if (offset < -1100) {
-        slider.style.transition = '0s';
+        slider.style.transition = '0.3s';
         offset = 0;
     }
     slider.style.left = offset + 'px';
